@@ -12,6 +12,7 @@
 		600797F5211A6F3000D998DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600797F4211A6F3000D998DF /* Assets.xcassets */; };
 		600797F8211A6F3000D998DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600797F6211A6F3000D998DF /* LaunchScreen.storyboard */; };
 		60079802211A712B00D998DF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60079801211A712B00D998DF /* Post.swift */; };
+		60079804211A721700D998DF /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60079803211A721700D998DF /* PostController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		600797F7211A6F3000D998DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		600797F9211A6F3000D998DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60079801211A712B00D998DF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		60079803211A721700D998DF /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				60079801211A712B00D998DF /* Post.swift */,
+				60079803211A721700D998DF /* PostController.swift */,
 				60079800211A711900D998DF /* Views */,
 				600797FF211A6F4300D998DF /* Resources */,
 			);
@@ -153,6 +156,7 @@
 			files = (
 				600797EE211A6F2F00D998DF /* AppDelegate.swift in Sources */,
 				60079802211A712B00D998DF /* Post.swift in Sources */,
+				60079804211A721700D998DF /* PostController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
