@@ -10,6 +10,7 @@ import Foundation
 
 class PostController {
     
+    static let baseURL = URL(string: "https://mypost-b2114.firebaseio.com/")
     var posts: [Post] = []
     
 }
