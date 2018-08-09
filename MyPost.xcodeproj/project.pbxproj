@@ -15,6 +15,7 @@
 		60079802211A712B00D998DF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60079801211A712B00D998DF /* Post.swift */; };
 		60079804211A721700D998DF /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60079803211A721700D998DF /* PostController.swift */; };
 		60079806211CC63C00D998DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60079805211CC63C00D998DF /* GoogleService-Info.plist */; };
+		60079808211CEA0500D998DF /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60079807211CEA0500D998DF /* PostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		60079801211A712B00D998DF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		60079803211A721700D998DF /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		60079805211CC63C00D998DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60079807211CEA0500D998DF /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 		CCBF293E8BAC83A7442A4A04 /* Pods_MyPost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D240299F22DF911B3A9101E7 /* Pods-MyPost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPost.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPost/Pods-MyPost.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 			children = (
 				60079801211A712B00D998DF /* Post.swift */,
 				60079803211A721700D998DF /* PostController.swift */,
+				60079809211CEA0E00D998DF /* ViewController */,
 				60079800211A711900D998DF /* Views */,
 				600797FF211A6F4300D998DF /* Resources */,
 			);
@@ -99,6 +102,14 @@
 				600797F6211A6F3000D998DF /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		60079809211CEA0E00D998DF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				60079807211CEA0500D998DF /* PostTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		82A2F0FA94662CF1A2736C1F /* Pods */ = {
@@ -230,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				600797EE211A6F2F00D998DF /* AppDelegate.swift in Sources */,
+				60079808211CEA0500D998DF /* PostTableViewController.swift in Sources */,
 				60079802211A712B00D998DF /* Post.swift in Sources */,
 				60079804211A721700D998DF /* PostController.swift in Sources */,
 			);

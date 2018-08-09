@@ -8,6 +8,11 @@
 
 import Foundation
 
+struct PostJSONDictionary:Codable {
+    
+    let posts: [Post]
+}
+
 struct Post: Codable {
     
     let username: String
