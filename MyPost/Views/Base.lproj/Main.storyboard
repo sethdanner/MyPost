@@ -48,7 +48,13 @@
                             <outlet property="delegate" destination="bxw-fg-l34" id="FAo-sJ-Ccj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="cjD-s2-AoU"/>
+                    <navigationItem key="navigationItem" id="cjD-s2-AoU">
+                        <barButtonItem key="rightBarButtonItem" title="Add Post" id="PzR-4Q-WhN">
+                            <connections>
+                                <action selector="addPostButtonTapped:" destination="bxw-fg-l34" id="lOH-nX-UBz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgh-Yg-UdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

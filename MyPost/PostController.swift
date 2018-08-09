@@ -38,7 +38,7 @@ class PostController {
         print(url)
     }
     
-    func uploadPost(username: String, text: String, timestamp: TimeInterval, completion: @escaping (Bool) -> Void) {
+    func addPost(username: String, text: String, completion: @escaping() -> Void) {
         
         let post = Post(username: username, text: text)
         let url = baseURL.appendingPathExtension("json")
@@ -52,11 +52,11 @@ class PostController {
             if let data = data {
                 
                 self.posts.append(post)
-                completion(true)
+                completion()
             }
             if let error = error {
                 print(error)
-                completion(false) ; return
+                completion() ; return
             }
         }
         task.resume()
