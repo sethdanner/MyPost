@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class PostTableViewController: UITableViewController {
     
@@ -15,6 +16,18 @@ class PostTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        postController.fetchPosts {
+            
+            self.reloadTableView()
+        }
+    }
+    
+    @IBAction func refreshButtonTapped(_ sender: UIBarButtonItem) {
+        
+        postController.fetchPosts {
+            
+            self.reloadTableView()
+        }
     }
     
     @IBAction func addPostButtonTapped(_ sender: UIBarButtonItem) {
@@ -52,7 +65,7 @@ class PostTableViewController: UITableViewController {
     
     func presentErrorAlert() {
         
-        let alertController = UIAlertController(title: "Uh oh!", message: "You may be missing information or have network connectivity issues. Please try again.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Uh oh!", message: "Please make sure you have entered both a username and message and try again.", preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         

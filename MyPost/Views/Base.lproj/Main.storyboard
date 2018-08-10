@@ -49,6 +49,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="cjD-s2-AoU">
+                        <barButtonItem key="leftBarButtonItem" title="Refresh" id="tvC-Tg-5ZY">
+                            <connections>
+                                <action selector="refreshButtonTapped:" destination="bxw-fg-l34" id="6i6-r0-MPp"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Post" id="PzR-4Q-WhN">
                             <connections>
                                 <action selector="addPostButtonTapped:" destination="bxw-fg-l34" id="lOH-nX-UBz"/>

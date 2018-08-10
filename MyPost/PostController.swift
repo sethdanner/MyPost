@@ -11,10 +11,10 @@ import FirebaseDatabase
 
 class PostController {
     
-    let baseURL = URL(string: "https://mypost-b2114.firebaseio.com/")!
+    let baseURL = URL(string: "https://mypost-b2114.firebaseio.com/posts")!
     var posts: [Post] = []
     
-    func fetchPosts(completion: @escaping (Bool) -> Void) {
+    func fetchPosts(completion: @escaping() -> Void) {
         
         let url = baseURL.appendingPathExtension("json")
         
@@ -24,13 +24,14 @@ class PostController {
                 
                 do {
                     let jsonDecoder = JSONDecoder()
-                    let postDictionary = try jsonDecoder.decode(PostJSONDictionary.self, from: data)
-                    let posts = postDictionary.posts.compactMap({$0})
-                    self.posts = posts
-                    completion(true)
+//                    let postDictionary = try jsonDecoder.decode([String:Post].self, from: data)
+//                    let posts: [Post] = postDictionary.compactMap({$0})
+                    let postDictionary = try jsonDecoder.decode(Dictionary<String, Post>.self, from: data)
+                    self.posts = Array(postDictionary.values)
+                    completion()
                 } catch let error {
                     print(error)
-                    completion(false) ; return
+                    completion() ; return
                 }
             }
         }
