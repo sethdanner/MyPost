@@ -75,8 +75,8 @@
 		600797EC211A6F2F00D998DF /* MyPost */ = {
 			isa = PBXGroup;
 			children = (
-				60079801211A712B00D998DF /* Post.swift */,
-				60079803211A721700D998DF /* PostController.swift */,
+				60A3E737211E052900AE6891 /* Model */,
+				60A3E738211E053500AE6891 /* ModelController */,
 				60079809211CEA0E00D998DF /* ViewController */,
 				60079800211A711900D998DF /* Views */,
 				600797FF211A6F4300D998DF /* Resources */,
@@ -110,6 +110,22 @@
 				60079807211CEA0500D998DF /* PostTableViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		60A3E737211E052900AE6891 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60079801211A712B00D998DF /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60A3E738211E053500AE6891 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				60079803211A721700D998DF /* PostController.swift */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 		82A2F0FA94662CF1A2736C1F /* Pods */ = {
